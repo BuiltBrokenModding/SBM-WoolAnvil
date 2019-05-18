@@ -1,0 +1,21 @@
+{
+  "pattern": [
+    "III",
+    " i ",
+    "iii"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:wool",
+      "data": 0
+    },
+    "i": {
+      "item": "minecraft:carpet",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "woolanvil:wool_anvil"
+  }
+}
