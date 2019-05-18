@@ -4,7 +4,6 @@
     "durability multiplier": 1,
     "level cap": 10,
     "weight": 0.1,
-    "enchantability": 1,
-    "player damage": false
+    "enchantability": 1
   }
 }

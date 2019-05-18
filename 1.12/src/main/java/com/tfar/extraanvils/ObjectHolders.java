@@ -12,10 +12,4 @@ public class ObjectHolders {
 
   @GameRegistry.ObjectHolder("extraanvils:stone_anvil_damaged")
   public static BlockGenericAnvil blockWoolAnvilDamaged;
-
-
-
-
-
-
 }
