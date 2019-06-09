@@ -1,9 +1,0 @@
-{
-  "wool": {
-    "enabled": true,
-    "durability multiplier": 1,
-    "level cap": 10,
-    "weight": 0.1,
-    "enchantability": 1
-  }
-}

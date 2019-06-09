@@ -1,8 +1,0 @@
-{
-  "parent": "block/anvil",
-  "textures": {
-    "particle": "woolanvil:blocks/wool_anvil_top",
-    "body": "woolanvil:blocks/wool_anvil_top",
-    "top": "woolanvil:blocks/wool_anvil_top_damaged"
-  }
-}

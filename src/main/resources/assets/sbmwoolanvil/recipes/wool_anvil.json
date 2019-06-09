@@ -16,6 +16,8 @@
     }
   },
   "result": {
-    "item": "woolanvil:wool_anvil"
+    "item": "sbmwoolanvil:anvil",
+    "data": 0,
+    "amount" : 1
   }
 }

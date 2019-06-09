@@ -1,64 +1,59 @@
 package com.builtbroken.woolanvil;
 
-import com.builtbroken.woolanvil.generic.BlockGenericAnvil;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemStack;
+import com.builtbroken.woolanvil.content.block.BlockAnvil;
+import com.builtbroken.woolanvil.content.block.ItemAnvilBlock;
+import com.builtbroken.woolanvil.content.gui.GuiHandler;
+import com.builtbroken.woolanvil.lib.network.PacketHandler;
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-@Mod(modid = WoolAnvils.MODID,name = WoolAnvils.NAME, version = WoolAnvils.MODVERSION/*, dependencies = "required-after:forge@[14.23.5.2796)"*/)
+@Mod(modid = WoolAnvils.DOMAIN, name = "[SBM] Wool Anvil", version = WoolAnvils.VERSION)
+@Mod.EventBusSubscriber(modid = WoolAnvils.DOMAIN)
 public class WoolAnvils
 {
-    public static final String MODID = "woolanvil";
-    public static final String NAME = "Wool Anvil";
-    public static final String MODVERSION = "@VERSION@";
+    public static final String DOMAIN = "sbmwoolanvil";
 
-    public static final HashMap<BlockGenericAnvil,BlockGenericAnvil> anvilDamageMap = new HashMap<>();
+    public static final String MAJOR_VERSION = "@MAJOR@";
+    public static final String MINOR_VERSION = "@MINOR@";
+    public static final String REVISION_VERSION = "@REVIS@";
+    public static final String BUILD_VERSION = "@BUILD@";
+    public static final String MC_VERSION = "@MC@";
+    public static final String VERSION = MC_VERSION + "-" + MAJOR_VERSION + "." + MINOR_VERSION + "." + REVISION_VERSION + "." + BUILD_VERSION;
 
-    public static final List<BlockGenericAnvil> anvils = new ArrayList<>();
+    @Mod.Instance(WoolAnvils.DOMAIN)
+    public static WoolAnvils INSTANCE;
 
-    public static ArrayList<String> strings = new ArrayList<>();
+    public static final String BLOCK_NAME = DOMAIN + ":anvil";
 
-    public static CreativeTabs creativeTab = new CreativeTabs(MODID) {
-        @Override
-        public ItemStack createIcon() {
-            return new ItemStack(ObjectHolders.blockWoolAnvil);
-        }
-    };
-
-    public static Logger logger = LogManager.getLogger();
-
-    @Mod.Instance
-    public static WoolAnvils instance;
-    @SidedProxy(clientSide = "com.tfar.extraanvils.ClientProxy", serverSide = "com.tfar.extraanvils.CommonProxy")
-    public static CommonProxy proxy;
+    @GameRegistry.ObjectHolder(BLOCK_NAME)
+    public static BlockAnvil block;
 
     @Mod.EventHandler
-    public void preInit(final FMLPreInitializationEvent event) {
-
-        boolean doJson = false;
-
-        if (doJson) {
-         //   Scripts.scripts();
-        }
-
-        proxy.preInit(event);
+    public static void preInit(FMLPreInitializationEvent event)
+    {
+        PacketHandler.registerMessages(WoolAnvils.DOMAIN);
+        NetworkRegistry.INSTANCE.registerGuiHandler(INSTANCE, new GuiHandler());
     }
 
-    @Mod.EventHandler
-    public void init(final FMLInitializationEvent event) {
-        proxy.init(event);
+    @SubscribeEvent
+    public static void registerBlocks(RegistryEvent.Register<Block> event)
+    {
+        event.getRegistry().register(new BlockAnvil()
+                .setRegistryName(new ResourceLocation(BLOCK_NAME))
+                .setTranslationKey(BLOCK_NAME)
+        );
+    }
 
-    //    for (Item item : ForgeRegistries.ITEMS){
-    //        if (item instanceof ItemArmor)System.out.println(item.getRegistryName().toString() +" "+ item.getItemEnchantability());
-    //    }
+    @SubscribeEvent
+    public static void registerItems(RegistryEvent.Register<Item> event)
+    {
+        event.getRegistry().register(new ItemAnvilBlock(block));
     }
 }

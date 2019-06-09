@@ -1,0 +1,58 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "anvil",
+    "textures": {
+      "particle": "sbmwoolanvil:blocks/anvil",
+      "body": "sbmwoolanvil:blocks/anvil",
+      "top": "sbmwoolanvil:blocks/anvil"
+    }
+  },
+  "variants": {
+    "normal": [
+      {}
+    ],
+    "inventory": [
+      {}
+    ],
+    "damage": {
+      "0": {
+        "model": "anvil",
+        "textures": {
+          "particle": "sbmwoolanvil:blocks/anvil",
+          "body": "sbmwoolanvil:blocks/anvil",
+          "top": "sbmwoolanvil:blocks/anvil"
+        }
+      },
+      "1": {
+        "model": "anvil",
+        "textures": {
+          "particle": "sbmwoolanvil:blocks/anvil_1",
+          "body": "sbmwoolanvil:blocks/anvil_1",
+          "top": "sbmwoolanvil:blocks/anvil_1"
+        }
+      },
+      "2": {
+        "model": "anvil",
+        "textures": {
+          "particle": "sbmwoolanvil:blocks/anvil_2",
+          "body": "sbmwoolanvil:blocks/anvil_2",
+          "top": "sbmwoolanvil:blocks/anvil_2"
+        }
+      }
+    },
+    "facing": {
+      "north": {
+        "y": 180
+      },
+      "south": {
+      },
+      "east": {
+        "y": 270
+      },
+      "west": {
+        "y": 90
+      }
+    }
+  }
+}
