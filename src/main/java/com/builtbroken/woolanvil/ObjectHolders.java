@@ -1,6 +1,6 @@
-package com.tfar.extraanvils;
+package com.builtbroken.woolanvil;
 
-import com.tfar.extraanvils.generic.BlockGenericAnvil;
+import com.builtbroken.woolanvil.generic.BlockGenericAnvil;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ObjectHolders {

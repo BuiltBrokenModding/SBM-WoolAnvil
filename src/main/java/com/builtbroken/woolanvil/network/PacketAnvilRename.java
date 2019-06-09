@@ -1,6 +1,6 @@
-package com.tfar.extraanvils.network;
+package com.builtbroken.woolanvil.network;
 
-import com.tfar.extraanvils.generic.ContainerGenericAnvil;
+import com.builtbroken.woolanvil.generic.ContainerGenericAnvil;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.inventory.Container;

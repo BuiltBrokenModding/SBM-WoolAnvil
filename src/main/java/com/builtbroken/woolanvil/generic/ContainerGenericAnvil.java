@@ -1,4 +1,4 @@
-package com.tfar.extraanvils.generic;
+package com.builtbroken.woolanvil.generic;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.enchantment.Enchantment;

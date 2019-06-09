@@ -1,8 +1,8 @@
-package com.tfar.extraanvils;
+package com.builtbroken.woolanvil;
 
 
-import com.tfar.extraanvils.generic.BlockGenericAnvil;
-import com.tfar.extraanvils.network.PacketHandler;
+import com.builtbroken.woolanvil.generic.BlockGenericAnvil;
+import com.builtbroken.woolanvil.network.PacketHandler;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.ResourceLocation;

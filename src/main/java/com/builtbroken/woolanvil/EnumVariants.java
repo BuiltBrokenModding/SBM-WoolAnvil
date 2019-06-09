@@ -1,4 +1,4 @@
-package com.tfar.extraanvils;
+package com.builtbroken.woolanvil;
 
 public enum  EnumVariants {
   NORMAL("_anvil"),

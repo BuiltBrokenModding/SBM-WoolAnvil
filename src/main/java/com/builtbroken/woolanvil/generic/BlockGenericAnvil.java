@@ -1,6 +1,6 @@
-package com.tfar.extraanvils.generic;
+package com.builtbroken.woolanvil.generic;
 
-import com.tfar.extraanvils.*;
+import com.builtbroken.woolanvil.*;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;

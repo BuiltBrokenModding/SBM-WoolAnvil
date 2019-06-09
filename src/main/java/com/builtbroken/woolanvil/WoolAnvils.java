@@ -1,6 +1,6 @@
-package com.tfar.extraanvils;
+package com.builtbroken.woolanvil;
 
-import com.tfar.extraanvils.generic.BlockGenericAnvil;
+import com.builtbroken.woolanvil.generic.BlockGenericAnvil;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;

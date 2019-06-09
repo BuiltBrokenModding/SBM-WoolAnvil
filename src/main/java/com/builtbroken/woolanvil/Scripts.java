@@ -1,12 +1,4 @@
-package com.tfar.extraanvils;
-
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-
-import java.io.File;
-import java.io.FileWriter;
-
-import static com.tfar.extraanvils.WoolAnvils.MODID;
+package com.builtbroken.woolanvil;
 
 public class Scripts {
 

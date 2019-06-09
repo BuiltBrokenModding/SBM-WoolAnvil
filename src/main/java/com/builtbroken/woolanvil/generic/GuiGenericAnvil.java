@@ -1,8 +1,8 @@
-package com.tfar.extraanvils.generic;
+package com.builtbroken.woolanvil.generic;
 
-import com.tfar.extraanvils.WoolAnvils;
-import com.tfar.extraanvils.network.PacketAnvilRename;
-import com.tfar.extraanvils.network.PacketHandler;
+import com.builtbroken.woolanvil.WoolAnvils;
+import com.builtbroken.woolanvil.network.PacketAnvilRename;
+import com.builtbroken.woolanvil.network.PacketHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.client.gui.inventory.GuiContainer;

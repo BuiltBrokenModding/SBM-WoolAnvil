@@ -1,6 +1,6 @@
-package com.tfar.extraanvils;
+package com.builtbroken.woolanvil;
 
-import com.tfar.extraanvils.generic.BlockGenericAnvil;
+import com.builtbroken.woolanvil.generic.BlockGenericAnvil;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.IModRegistry;
 import mezz.jei.api.JEIPlugin;

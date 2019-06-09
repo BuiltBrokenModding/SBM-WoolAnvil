@@ -1,4 +1,4 @@
-package com.tfar.extraanvils.generic;
+package com.builtbroken.woolanvil.generic;
 
 public class AnvilProperties {
 

@@ -1,8 +1,8 @@
-package com.tfar.extraanvils;
+package com.builtbroken.woolanvil;
 
-import com.tfar.extraanvils.generic.BlockGenericAnvil;
-import com.tfar.extraanvils.generic.ContainerGenericAnvil;
-import com.tfar.extraanvils.generic.GuiGenericAnvil;
+import com.builtbroken.woolanvil.generic.BlockGenericAnvil;
+import com.builtbroken.woolanvil.generic.ContainerGenericAnvil;
+import com.builtbroken.woolanvil.generic.GuiGenericAnvil;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;

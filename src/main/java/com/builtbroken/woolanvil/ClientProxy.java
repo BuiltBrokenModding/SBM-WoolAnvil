@@ -1,6 +1,6 @@
-package com.tfar.extraanvils;
+package com.builtbroken.woolanvil;
 
-import com.tfar.extraanvils.generic.BlockGenericAnvil;
+import com.builtbroken.woolanvil.generic.BlockGenericAnvil;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

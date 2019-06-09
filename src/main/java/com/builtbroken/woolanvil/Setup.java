@@ -1,8 +1,8 @@
-package com.tfar.extraanvils;
+package com.builtbroken.woolanvil;
 
 import com.google.gson.*;
-import com.tfar.extraanvils.generic.AnvilProperties;
-import com.tfar.extraanvils.generic.BlockGenericAnvil;
+import com.builtbroken.woolanvil.generic.AnvilProperties;
+import com.builtbroken.woolanvil.generic.BlockGenericAnvil;
 import net.minecraft.block.Block;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
